@@ -34,10 +34,19 @@ ul.carousel{
 	color:white;
 }
 
-
+@media all and (min-width: 414px) {
+	.carousel  li{
+	 	min-width: 414px;
+	}
+}
 @media all and (min-width: 480px) {
 	.carousel  li{
 	 	min-width: 480px;
+	}
+}
+@media all and (min-width: 736px) {
+	.carousel  li{
+	 	min-width: 368px;
 	}
 }
 @media all and (min-width: 768px) {
