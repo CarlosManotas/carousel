@@ -34,6 +34,8 @@ ul.carousel{
 	color:white;
 }
 
+/*  Agregue sus propias configuraciones de css */
+
 @media all and (min-width: 414px) {
 	.carousel  li{
 	 	min-width: 414px;
