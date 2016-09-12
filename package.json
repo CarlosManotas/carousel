@@ -1,0 +1,19 @@
+{
+  "name": "carousel",
+  "version": "0.1.0",
+  "description": "carousel con simple javascript y propiedad order de flexbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosManotas/carousel.git"
+  },
+  "author": "Carlos Manotas <carlosmanotas@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlosManotas/carousel/issues"
+  },
+  "homepage": "https://github.com/CarlosManotas/carousel#readme"
+}

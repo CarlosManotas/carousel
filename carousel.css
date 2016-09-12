@@ -1,0 +1,57 @@
+.contenedor{
+	overflow: hidden; 
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 35vh;
+}
+
+ul.carousel{
+	display:flex; 
+	padding:0; 
+	margin:0; 
+	position:relative; 
+	left:0; 
+	transition: all .5s;
+	margin-bottom: 1em;
+} 
+.carousel li{
+	list-style:none; 
+	box-sizing: border-box; 
+	margin:0; 
+	min-width:320px; 
+	padding: 0 .5em;
+	transition: all .5s;
+} 
+.carousel figure{
+	margin:0; 
+	width: 100%; 
+	overflow:hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+	font-size: 5em;
+	color:white;
+}
+
+
+@media all and (min-width: 480px) {
+	.carousel  li{
+	 	min-width: 480px;
+	}
+}
+@media all and (min-width: 768px) {
+	.carousel  li{
+	 	min-width: 384px;
+	}
+}
+@media all and (min-width: 1024px) {
+	.carousel  li{
+		min-width: 340px;
+	}
+}
+@media all and (min-width: 1300px) {
+	.carousel  li{
+	 	min-width: 240px ;
+	}
+}
