@@ -1,5 +1,5 @@
 {
-  "name": "carousel",
+  "name": "carousel-mts",
   "version": "0.1.0",
   "description": "carousel con simple javascript y propiedad order de flexbox",
   "main": "index.js",

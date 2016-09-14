@@ -5,7 +5,7 @@
 	margin-top: 35vh;
 }
 
-ul.carousel{
+ul.carousel-mts{
 	display:flex; 
 	padding:0; 
 	margin:0; 
@@ -14,7 +14,7 @@ ul.carousel{
 	transition: all .5s;
 	margin-bottom: 1em;
 } 
-.carousel li{
+.carousel-mts li{
 	list-style:none; 
 	box-sizing: border-box; 
 	margin:0; 
@@ -22,7 +22,7 @@ ul.carousel{
 	padding: 0 .5em;
 	transition: all .5s;
 } 
-.carousel figure{
+.carousel-mts figure{
 	margin:0; 
 	width: 100%; 
 	overflow:hidden;
@@ -37,32 +37,32 @@ ul.carousel{
 /*  Agregue sus propias configuraciones de css */
 
 @media all and (min-width: 414px) {
-	.carousel  li{
+	.carousel-mts  li{
 	 	min-width: 414px;
 	}
 }
 @media all and (min-width: 480px) {
-	.carousel  li{
+	.carousel-mts  li{
 	 	min-width: 480px;
 	}
 }
 @media all and (min-width: 736px) {
-	.carousel  li{
+	.carousel-mts  li{
 	 	min-width: 368px;
 	}
 }
 @media all and (min-width: 768px) {
-	.carousel  li{
+	.carousel-mts  li{
 	 	min-width: 384px;
 	}
 }
 @media all and (min-width: 1024px) {
-	.carousel  li{
+	.carousel-mts  li{
 		min-width: 340px;
 	}
 }
 @media all and (min-width: 1300px) {
-	.carousel  li{
+	.carousel-mts  li{
 	 	min-width: 240px ;
 	}
 }
