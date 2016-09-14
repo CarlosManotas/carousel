@@ -1,7 +1,7 @@
 (function(){
 
 
-		var carousel = document.getElementById('carousel');
+		var carousel = document.getElementById('carousel-mts');
         var anchoPantalla = window.innerWidth;
         var son = carousel.children;
         var index = 0;
