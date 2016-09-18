@@ -14,6 +14,12 @@
 
 
 ### 1.Como empezar
+#### Instalar
+
+```bash
+npm install carousel-mts --save
+```
+
 Agrega estos archivos en tu html.
 
 
