@@ -1,13 +1,13 @@
 ##Nuevo carousel responsive sin jquery muy simple de entender
 
 ### Carousel ###
->v.0.1.0
+>v.0.2.0
 
 ###Caracteristicas:
 * Responsive
 * Acepta cualquier cantidad de items
 * Personalizable Css
-* Facil de aplicar 
+* Facil de aplicar
 * Sin Jquery
 
 > Probado en IE10, Chrome, Safari, Firefox, Opera, iPhone, iPad, (cualquier navegador que acepte la proriedad flexbox).
@@ -20,7 +20,7 @@ Agrega estos archivos en tu html.
 ```html
 <!-- Estilos basicos -->
 <link rel="stylesheet" href="carousel.css">
- 
+
 <!-- Incluir archivo javascript -->
 <script src="carousel.js"></script>
 ```
