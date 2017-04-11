@@ -14,6 +14,12 @@
 
 
 ### 1.Como empezar
+#### Instalar
+
+```bash
+npm install carousel-mts --save
+```
+
 Agrega estos archivos en tu html.
 
 
@@ -24,13 +30,13 @@ Agrega estos archivos en tu html.
 <!-- Incluir archivo javascript -->
 <script src="carousel.js"></script>
 ```
-### 2.Set up your HTML
+### 2.Configura tu HTML
 Muestra de la estructura a usar en el html.
 El contenedor que envuelve el carousel puede ser obviado solo hace el efecto de overflow hidden.
 
 ```html
 <div class="contenedor"> <!-- opcional -->
-	<ul id="carousel" class="carousel">
+	<ul id="carousel-mts" class="carousel-mts">
 	  <li> <figure> TU IMAGEN </figure> </li>
 	  <li> <figure> TU IMAGEN </figure> </li>
 	  <li> <figure> TU IMAGEN </figure> </li>
