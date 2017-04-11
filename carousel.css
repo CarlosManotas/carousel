@@ -1,30 +1,29 @@
 .contenedor{
-	overflow: hidden; 
+	overflow: hidden;
 	max-width: 1200px;
 	margin: 0 auto;
 	margin-top: 35vh;
 }
 
 ul.carousel-mts{
-	display:flex; 
-	padding:0; 
-	margin:0; 
-	position:relative; 
-	left:0; 
+	display:flex;
+	padding:0;
+	margin:0;
+	position:relative;
+	left:0;
 	transition: all .5s;
 	margin-bottom: 1em;
-} 
+}
 .carousel-mts li{
-	list-style:none; 
-	box-sizing: border-box; 
-	margin:0; 
-	min-width:320px; 
+	list-style:none;
+	box-sizing: border-box;
+	margin:0;
 	padding: 0 .5em;
 	transition: all .5s;
-} 
+}
 .carousel-mts figure{
-	margin:0; 
-	width: 100%; 
+	margin:0;
+	width: 100%;
 	overflow:hidden;
 	display: flex;
 	justify-content: center;
@@ -32,35 +31,4 @@ ul.carousel-mts{
 	background-color: #333;
 	font-size: 5em;
 	color:white;
-}
-
-@media all and (min-width: 414px) {
-	.carousel-mts  li{
-	 	min-width: 414px;
-	}
-}
-@media all and (min-width: 480px) {
-	.carousel-mts  li{
-	 	min-width: 480px;
-	}
-}
-@media all and (min-width: 736px) {
-	.carousel-mts  li{
-	 	min-width: 368px;
-	}
-}
-@media all and (min-width: 768px) {
-	.carousel-mts  li{
-	 	min-width: 384px;
-	}
-}
-@media all and (min-width: 1024px) {
-	.carousel-mts  li{
-		min-width: 340px;
-	}
-}
-@media all and (min-width: 1300px) {
-	.carousel-mts  li{
-	 	min-width: 240px ;
-	}
 }

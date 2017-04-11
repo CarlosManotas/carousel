@@ -1,37 +1,57 @@
 (function(){
+	var numberListView,
+			widthAndMargin,
+	    index = 0,
+	    index2 = 1,
+			screenWidth = window.innerWidth,
+			carousel = document.getElementById('carousel-mts'),
+	    listImg = carousel.children;
 
+	if(screenWidth<=320){
+		numberListView = 1;
+		widthAndMargin = screenWidth;
+	}else if (screenWidth>320&&screenWidth<=480) {
+		numberListView = 2;
+		widthAndMargin = screenWidth / 2;
+	}else if (screenWidth>480&&screenWidth<=768) {
+		numberListView = 3;
+		widthAndMargin = screenWidth / 3;
+	}else if (screenWidth>768&&screenWidth<1200) {
+		numberListView = 4;
+		widthAndMargin = screenWidth / 4;
+	}else if (screenWidth>1200) {
+		screenWidth = 1200;
+		numberListView = 5;
+		widthAndMargin = screenWidth / 5;
+	}
 
-		var carousel = document.getElementById('carousel-mts');
-        var anchoPantalla = window.innerWidth;
-        var son = carousel.children;
-        var index = 0;
-        var index2 = 1;
-        
-        setTimeout(function () {
-            var wli = carousel.children.item(1).clientWidth;
-            if (anchoPantalla > 1200) {
-                anchoPantalla = 1200;
-            }
-            var marge = setInterval(function () {
-                var son2 = son.item(index);
-                var margenActual = window.getComputedStyle(son2)['margin-left'].replace('px', '');
-                var nuevoMargen = Number(margenActual - wli);
-                son2.setAttribute('style', 'margin-left:' + nuevoMargen + 'px');
-            }, 1500);
-        }, 10);
+	var marge = function(){
+		return setInterval(function(){
+				var itemImg = listImg.item(index);
+				var nuevoMargen = -(widthAndMargin);
+				itemImg.setAttribute('style', 'margin-left:' + nuevoMargen + 'px; width:'+widthAndMargin+'px');
+		},1500);
+	};
+	var order = function(){
+		return setInterval(function () {
+			var itemImgOrder = listImg.item(index);
+			itemImgOrder.setAttribute('style', 'order:' + index2 + '; width:'+widthAndMargin+'px');
+			index+=1;
+			index2+=1;
+			if (index >= listImg.length) {
+					index = 0;
+			}
+		}, 1500);
+	};
 
-        setTimeout(function () {
-            var order = setInterval(function () {
-                var sonmas = son.item(index);
-                var newEstado = sonmas.setAttribute('style', 'order:' + index2);
-                index++;
-                index2++;
-                if (index >= son.length) {
-                    index = 0;
-                }
-            }, 1500);
-        }, 1000);
-
+	setTimeout(function () {
+			var newArray = Array.from(listImg);
+			newArray.map((value,iterador)=>{
+				value.setAttribute('style','width:'+widthAndMargin+'px');
+			})
+	    marge();
+			setTimeout(function () {
+				order();
+	    }, 1000);
+	}, 10);
 })();
-
-
