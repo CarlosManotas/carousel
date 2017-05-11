@@ -25,33 +25,30 @@
 		widthAndMargin = screenWidth / 5;
 	}
 
-	var marge = function(){
+
+	function order(){
+		var newArray = Array.from(listImg);
+		newArray.map(function(value){
+			return value.setAttribute('style',`min-width:${widthAndMargin}px;`)
+		})
 		return setInterval(function(){
-				var itemImg = listImg.item(index);
-				var nuevoMargen = -(widthAndMargin);
-				itemImg.setAttribute('style', 'margin-left:' + nuevoMargen + 'px; width:'+widthAndMargin+'px');
-		},1500);
-	};
-	var order = function(){
-		return setInterval(function () {
 			var itemImgOrder = listImg.item(index);
-			itemImgOrder.setAttribute('style', 'order:' + index2 + '; width:'+widthAndMargin+'px');
+			var fowardItemMargin ;
+			var newMargin = -(widthAndMargin);
+			if(index === listImg.length-1){
+				fowardItemMargin = listImg.item(0);
+			}else{
+				fowardItemMargin = listImg.item(index + 1);
+			}
+			fowardItemMargin.setAttribute('style', `margin-left:${newMargin}px; min-width:${widthAndMargin}px;`);
+			itemImgOrder.setAttribute('style',`margin-left:0;min-width:${widthAndMargin}px;order:${index2}`);
 			index+=1;
 			index2+=1;
 			if (index >= listImg.length) {
 					index = 0;
 			}
-		}, 1500);
+		}, 2000);
 	};
 
-	setTimeout(function () {
-			var newArray = Array.from(listImg);
-			newArray.map((value,iterador)=>{
-				value.setAttribute('style','width:'+widthAndMargin+'px');
-			})
-	    marge();
-			setTimeout(function () {
-				order();
-	    }, 1000);
-	}, 10);
+	order();
 })();

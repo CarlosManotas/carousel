@@ -7,6 +7,7 @@
 
 ul.carousel-mts{
 	display:flex;
+	display: -webkit-flex;
 	padding:0;
 	margin:0;
 	position:relative;
@@ -19,7 +20,7 @@ ul.carousel-mts{
 	box-sizing: border-box;
 	margin:0;
 	padding: 0 .5em;
-	transition: all .5s;
+	transition: margin 600ms;
 }
 .carousel-mts figure{
 	margin:0;

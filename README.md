@@ -1,55 +1,54 @@
-##Nuevo carousel responsive sin jquery muy simple de entender
+## New Carousel responsive without Jquery very simple
 
-### Carousel ###
->v.0.2.0
+### Carousel-Mts ###
+>v.0.2.5
 
-###Caracteristicas:
+### Characteristics:
 * Responsive
-* Acepta cualquier cantidad de items
-* Personalizable Css
-* Facil de aplicar
-* Sin Jquery
+* Accept any number of items
+* Css Customizable
+* Easy to apply
+* Without Jquery
 
-> Probado en IE10, Chrome, Safari, Firefox, Opera, iPhone, iPad, (cualquier navegador que acepte la proriedad flexbox).
+> Tested on IE10, Chrome, Safari, Firefox, Opera, iPhone, iPad, (Any browser that accepts flexbox).
 
 
-### 1.Como empezar
-#### Instalar
+### 1.How to start
+#### install
 
 ```bash
 npm install carousel-mts --save
 ```
 
-Agrega estos archivos en tu html.
+Add this files in to html.
 
 
 ```html
-<!-- Estilos basicos -->
+<!-- basic styles -->
 <link rel="stylesheet" href="carousel.css">
 
-<!-- Incluir archivo javascript -->
+<!-- add javascript file-->
 <script src="carousel.js"></script>
 ```
-### 2.Configura tu HTML
-Muestra de la estructura a usar en el html.
-El contenedor que envuelve el carousel puede ser obviado solo hace el efecto de overflow hidden.
+### 2.Set your HTML
+Sample structure to use in the html.
 
 ```html
-<div class="contenedor"> <!-- opcional -->
+<div class="contenedor"> <!-- optional -->
 	<ul id="carousel-mts" class="carousel-mts">
-	  <li> <figure> TU IMAGEN </figure> </li>
-	  <li> <figure> TU IMAGEN </figure> </li>
-	  <li> <figure> TU IMAGEN </figure> </li>
-	  <li> <figure> TU IMAGEN </figure> </li>
-	  <li> <figure> TU IMAGEN </figure> </li>
-	  <li> <figure> TU IMAGEN </figure> </li>
-	  <li> <figure> TU IMAGEN </figure> </li>
+	  <li> <figure> YOUR IMAGE </figure> </li>
+	  <li> <figure> YOUR IMAGE </figure> </li>
+	  <li> <figure> YOUR IMAGE </figure> </li>
+	  <li> <figure> YOUR IMAGE </figure> </li>
+	  <li> <figure> YOUR IMAGE </figure> </li>
+	  <li> <figure> YOUR IMAGE </figure> </li>
+	  <li> <figure> YOUR IMAGE </figure> </li>
 	  ...
 	</ul>
 </div>
 ```
-### 3.Listo para usar
-Esperabas mas configuracion?, pues esto es todo.
+### 3.Ready to use
+That's all.
 
 
 License
